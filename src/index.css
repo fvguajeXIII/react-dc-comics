@@ -13,7 +13,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 24px 40px 0 40px;
+  padding: 20px 40px;
+  margin: 20px 0;
 }
 
 .logo {
@@ -72,4 +73,55 @@
   position: absolute;
   left: 20%;
   bottom: 0;
+}
+
+/* MAIN SECTION */
+main {
+  background: #222;
+  min-height: 300px;
+}
+
+.main-content {
+  color: #fff;
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 40px 0 60px 0;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.main-banner {
+  background: #0072ce;
+  width: 100%;
+  padding: 45px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-banner-list {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-banner-list li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.main-banner-list img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 8px;
+  display: block;
 }
