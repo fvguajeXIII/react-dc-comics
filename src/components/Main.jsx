@@ -1,4 +1,5 @@
 import React from 'react';
+import ComicsList from './ComicsList';
 import digitalComics from '../assets/img/buy-comics-digital-comics.png';
 import merchandise from '../assets/img/buy-comics-merchandise.png';
 import subscriptions from '../assets/img/buy-comics-subscriptions.png';
@@ -9,7 +10,7 @@ function Main() {
   return (
     <main>
       <div className="main-content">
-        <h2 className="main-title">{'-->'} Content goes here {'<--'}</h2>
+        <ComicsList />
       </div>
       <section className="main-banner">
         <ul className="main-banner-list">

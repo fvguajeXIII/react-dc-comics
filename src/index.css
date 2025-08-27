@@ -86,8 +86,55 @@ main {
   text-align: left;
   font-size: 1.5rem;
   font-weight: 600;
-  padding: 40px 0 60px 0;
+  padding: 40px 60px 60px 60px;
   font-family: 'Open Sans', Arial, sans-serif;
+}
+
+/* COMICS LIST */
+.comics-list {
+  width: 100%;
+}
+
+.comics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.comic-card {
+  background: transparent;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.comic-card:hover {
+  transform: translateY(-5px);
+}
+
+.comic-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: top;
+  margin-bottom: 10px;
+}
+
+.comic-card h3 {
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.comic-card .price {
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin: 0;
 }
 
 .main-banner {
