@@ -107,10 +107,17 @@ main {
   text-align: center;
   cursor: pointer;
   transition: transform 0.2s;
+  position: relative;
+  overflow: hidden;
 }
 
 .comic-card:hover {
   transform: translateY(-5px);
+}
+
+.comic-card__image {
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .comic-card img {
@@ -118,10 +125,13 @@ main {
   height: 250px;
   object-fit: cover;
   object-position: top;
-  margin-bottom: 10px;
 }
 
-.comic-card h3 {
+.comic-card__content {
+  padding: 10px 0;
+}
+
+.comic-card__title {
   color: #fff;
   font-size: 0.9rem;
   font-weight: 400;
@@ -130,11 +140,63 @@ main {
   text-transform: uppercase;
 }
 
-.comic-card .price {
+.comic-card__price {
   color: #fff;
   font-size: 0.8rem;
-  font-weight: 400;
-  margin: 0;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+.comic-card__meta {
+  margin-bottom: 10px;
+}
+
+.comic-card__series,
+.comic-card__type,
+.comic-card__date {
+  color: #ccc;
+  font-size: 0.7rem;
+  margin: 2px 0;
+  font-style: italic;
+}
+
+.comic-card__description {
+  color: #fff;
+  font-size: 0.7rem;
+  line-height: 1.3;
+  margin: 10px 0;
+  text-align: left;
+  display: none; /* Nascosta per default, mostrata solo al hover */
+  background: rgba(0, 0, 0, 0.9);
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  overflow-y: auto;
+}
+
+.comic-card:hover .comic-card__description {
+  display: block;
+}
+
+.comic-card__credits {
+  margin-top: 5px;
+}
+
+.comic-card__writers,
+.comic-card__artists {
+  color: #aaa;
+  font-size: 0.6rem;
+  margin: 2px 0;
+  text-align: left;
+}
+
+.comic-card__writers strong,
+.comic-card__artists strong {
+  color: #fff;
 }
 
 .main-banner {

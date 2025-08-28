@@ -1,3 +1,5 @@
+import ComicCard from './ComicCard'
+
 function ComicsList() {
   const comics = [
   {
@@ -159,11 +161,7 @@ function ComicsList() {
     <div className="comics-list">
       <div className="comics-grid">
         {comics.map(comic => (
-          <div key={comic.id} className="comic-card">
-            <img src={comic.thumb} alt={comic.title} />
-            <h3>{comic.title}</h3>
-            <p className="price">{comic.price}</p>
-          </div>
+          <ComicCard key={comic.id} comic={comic} />
         ))}
       </div>
     </div>
