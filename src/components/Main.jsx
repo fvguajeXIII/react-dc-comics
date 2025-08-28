@@ -6,11 +6,11 @@ import subscriptions from '../assets/img/buy-comics-subscriptions.png';
 import shopLocator from '../assets/img/buy-comics-shop-locator.png';
 import powerVisa from '../assets/img/buy-dc-power-visa.svg';
 
-function Main() {
+function Main({ comics }) {
   return (
     <main>
       <div className="main-content">
-        <ComicsList />
+        <ComicsList comics={comics} />
       </div>
       <section className="main-banner">
         <ul className="main-banner-list">
